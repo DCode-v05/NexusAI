@@ -1,0 +1,49 @@
+# ============================================================
+# NexusAI — Full project requirements (backend + tests)
+# ============================================================
+
+# Web framework
+fastapi[standard]==0.123.2
+uvicorn[standard]==0.35.0
+
+# Data validation
+pydantic==2.11.7
+pydantic-settings==2.7.0
+email-validator==2.2.0
+
+# Database
+sqlalchemy[asyncio]==2.0.30
+asyncpg==0.30.0
+alembic==1.14.0
+aiosqlite==0.20.0
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.3.0
+
+# HTTP client (MCP servers + Ollama)
+httpx==0.28.1
+
+# ML / AI
+scikit-learn==1.5.2
+numpy==1.26.4
+transformers==4.46.3
+torch==2.5.1
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0
+
+# NLP
+spacy==3.8.3
+
+# Anthropic SDK (Claude fallback)
+anthropic==0.40.0
+
+# File handling
+python-multipart>=0.0.18
+pypdf2==3.0.1
+
+# ---------- Testing ----------
+pytest>=8.0.0
+pytest-asyncio>=0.24.0
+pytest-cov>=5.0.0
